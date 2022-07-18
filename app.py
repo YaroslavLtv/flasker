@@ -23,7 +23,7 @@ ckeditor = CKEditor(app)
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 # New MySQL DB
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Lytvynyuk87@localhost/our_users'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://vjqaobumwyqgbb:443f87e234a28b8ae7dc2bde75ac018578979cdb171c4c9aefa17c0a42dcd481@ec2-52-205-61-230.compute-1.amazonaws.com:5432/de1vl0h9dptjrc'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://vjqaobumwyqgbb:443f87e234a28b8ae7dc2bde75ac018578979cdb171c4c9aefa17c0a42dcd481@ec2-52-205-61-230.compute-1.amazonaws.com:5432/de1vl0h9dptjrc'
 # Secret Key
 app.config['SECRET_KEY'] = 'secret123'
 #Upload folder for profile pics
