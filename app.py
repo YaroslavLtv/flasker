@@ -1,6 +1,5 @@
 import email
 from email.policy import default
-from turtle import title
 from flask import Flask, current_app, redirect, render_template, flash, request, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
