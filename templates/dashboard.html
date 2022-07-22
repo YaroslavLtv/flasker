@@ -11,7 +11,12 @@
 <h2>Dashboard</h2>
 <br>
 <div class="card" style="width: 18rem;">
+    {% if current_user.profile_pic %}
+    <img src="{{ url_for('static', filename='images/' + current_user.profile_pic) }}" class="card-img-top" alt="...">
+    {% else %}
     <img src="{{ url_for('static', filename='images/default_user_pic.png') }}" class="card-img-top" alt="...">
+    {% endif %}
+
     <div class="card-body">
       <h5 class="card-title">{{ current_user.name }}</h5>
       <p class="card-text">
